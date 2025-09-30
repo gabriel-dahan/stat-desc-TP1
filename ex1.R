@@ -126,3 +126,5 @@ table(titanic_svm$PortEmbarq, titanic_svm$Classe)
 #--- 29.
 table(titanic_svm$PortEmbarq, titanic_svm$Classe, titanic_svm$Survie)
 
+# For fun...
+write.csv(titanic_svm, './out/titanic_svm.csv')
