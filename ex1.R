@@ -79,7 +79,7 @@ titanic_client <- titanic_client[-dup,]
 titanic_client$Age <- as.numeric(titanic_client$Age)
 
 #--- 18.
-titanic_passager <- merge(titanic_client, titanic_place, by.x = 'id', by.y = 'id')
+titanic_passager <- merge(titanic_client, titanic_place, by = 'id')
 
 #--- 19.
 titanic_svm <- titanic_passager[-which(is.na(titanic_passager$Age)),]
